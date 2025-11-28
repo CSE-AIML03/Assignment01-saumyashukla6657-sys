@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-commerce Product Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            margin: 0;
+            padding: 0;
+        }
+
+        .product-container {
+            width: 70%;
+            max-width: 900px;
+            margin: 50px auto;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            text-align: center;
+        
+        }
+
+        
+
+        .product-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+            
+        }
+
+        
+
+        h1 {
+            color: #222;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #27ae60;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .description {
+            color: #555;
+            margin-top: 15px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .rating {
+            margin: 15px 0;
+            font-size: 18px;
+            color: #f39c12;
+        }
+
+        .buy-btn {
+            background: linear-gradient(135deg, #ff9800, #f57c00);
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+           
+        }
+
+        .buy-btn:hover {
+            background: linear-gradient(135deg, #f57c00, #e65100);
+            
+        }
+
+        
+        @media (max-width: 768px) {
+            .product-container {
+                width: 90%;
+                padding: 20px;
+            }
+            .product-image {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-container">
+        <h1>🎧 Wireless Headphones</h1>
+
+        <img src="headphones.jpg" class="product-image" alt="Wireless noise-cancelling headphones">
+
+        <p class="price">₹2,499</p>
+
+        <p class="rating">⭐⭐⭐⭐☆ (120 reviews)</p>
+
+        <p class="description">
+            Experience immersive sound with advanced noise cancellation technology.  
+            Lightweight, comfortable design with long-lasting battery life.  
+            Perfect for gaming, music, and calls.
+        </p>
+
+        <button class="buy-btn">🛒 Add to Cart</button>
+    </div>
+
+</body>
+</html>
