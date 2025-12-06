@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive E-commerce Navbar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    background:#111;
+    color:#fff;
+}
+
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#f0a500;
+}
+
+/* Hamburger Menu */
+.menu-icon{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Mobile Menu */
+@media (max-width:768px){
+    .nav-links{
+        position:absolute;
+        top:65px;
+        left:-100%;
+        width:100%;
+        background:#111;
+        flex-direction:column;
+        gap:20px;
+        padding:20px 0;
+        text-align:center;
+        transition:0.4s;
+    }
+    
+
+    
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .menu-icon{
+        display:block;
+        color:#fff;
+    }
+}
+
+#nav-link a{
+    color: white;
+     text-decoration: none;
+}
+
+#nav-link a:hover{
+    color: #f0a500;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Categories</a>
+             <a href="#">Deals</a>
+            <a href="#">Contact</a>
+        
+        </div>
+        <div class="nav-link" id="nav-link">
+            <a href="#">Cart 🛒</a>
+            <a href="#">Login</a>
+        </div>
+        
+    </nav>
+   
+</header>
+
+<script>
+function toggleMenu(){
+    document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
+<h2>Welcome to ShopEase!</h2>
+        <p>Your one-stop destination for all shopping needs.</p>
+
+</body>
+</html>
